@@ -5,7 +5,7 @@ const port = 3000;
 const loggingMiddleware = (req, res, next) => {
   const time = new Date().toString();
   console.log("request received at " + time);
-  res.setHeader("X-Codaisseur-Time", time);
+  res.setHeader("X-Gillz-Time", time);
   // Continue on to the next middleware or handler
   next();
 };
